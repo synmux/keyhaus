@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "skills": {
+    "ci-cd-best-practices": {
+      "source": "mindrally/skills",
+      "sourceType": "github",
+      "skillPath": "ci-cd-best-practices/SKILL.md",
+      "computedHash": "16c5f5bafd768c74bbf75b69b2d73c7fe2f2915ce57774ae4c6d7b285fd5d357"
+    },
+    "clean-architecture": {
+      "source": "mindrally/skills",
+      "sourceType": "github",
+      "skillPath": "clean-architecture/SKILL.md",
+      "computedHash": "c5b03a3910c3e63eb9ae08bb782e9d67408212d989255def392944a03041b7ab"
+    },
+    "clean-code": {
+      "source": "mindrally/skills",
+      "sourceType": "github",
+      "skillPath": "clean-code/SKILL.md",
+      "computedHash": "0d98b0ba9bf79991ed1b742afdca188fe81ee01298838894a73e530d9f239927"
+    },
+    "github-workflow": {
+      "source": "mindrally/skills",
+      "sourceType": "github",
+      "skillPath": "github-workflow/SKILL.md",
+      "computedHash": "3a033172612eceefbaf4177f77c6ba6bc9fd037f6f3d795f8cbba814826b84b7"
+    },
+    "ruby": {
+      "source": "mindrally/skills",
+      "sourceType": "github",
+      "skillPath": "ruby/SKILL.md",
+      "computedHash": "5f182d7742391faf823a3fb94da62288c9d3663eda302b4321ab7d017a3e2e1d"
+    },
+    "ruby-rails": {
+      "source": "mindrally/skills",
+      "sourceType": "github",
+      "skillPath": "ruby-rails/SKILL.md",
+      "computedHash": "3b9dc29b7abf6879c3e3ce6686fd98fb804f0aa83a7592c4765ba8c5b73307ee"
+    }
+  }
+}
