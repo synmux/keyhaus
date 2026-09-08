@@ -45,6 +45,7 @@ build:
 ```
 
 Best practices:
+
 - Use dependency caching to speed up builds
 - Generate build artifacts for downstream stages
 - Pin dependency versions for reproducibility
@@ -70,6 +71,7 @@ test:
 ```
 
 Testing layers:
+
 - **Unit tests**: Fast, isolated, run on every commit
 - **Integration tests**: Test component interactions
 - **End-to-end tests**: Validate user workflows
@@ -89,6 +91,7 @@ security:
 ```
 
 Security scanning types:
+
 - **SAST**: Static Application Security Testing
 - **DAST**: Dynamic Application Security Testing
 - **Dependency scanning**: Check for vulnerable packages
@@ -136,6 +139,7 @@ deploy:blue-green:
 ```
 
 Benefits:
+
 - Zero-downtime deployments
 - Easy rollback by switching traffic back
 - Full testing in production-like environment
@@ -155,6 +159,7 @@ deploy:canary:
 ```
 
 Canary stages:
+
 1. Deploy to 5% of traffic
 2. Monitor error rates and latency
 3. Gradually increase if metrics are healthy
@@ -172,6 +177,7 @@ deploy:rolling:
 ```
 
 Configuration:
+
 - Set `maxUnavailable` and `maxSurge`
 - Health checks determine rollout pace
 - Automatic rollback on failure
@@ -182,7 +188,7 @@ Decouple deployment from release:
 
 ```javascript
 // Feature flag implementation
-if (featureFlags.isEnabled('new-checkout')) {
+if (featureFlags.isEnabled("new-checkout")) {
   return <NewCheckout />;
 } else {
   return <LegacyCheckout />;
@@ -190,6 +196,7 @@ if (featureFlags.isEnabled('new-checkout')) {
 ```
 
 Benefits:
+
 - Deploy disabled features to production
 - Gradual feature rollout
 - A/B testing capabilities
@@ -204,6 +211,7 @@ Development -> Testing -> Staging -> Production
 ```
 
 Each environment should:
+
 - Mirror production as closely as possible
 - Have isolated data and secrets
 - Use infrastructure as code
@@ -228,6 +236,7 @@ variables:
 ```
 
 Best practices:
+
 - Never hardcode secrets
 - Use secret management (Vault, AWS Secrets Manager)
 - Separate configuration from code
@@ -292,6 +301,7 @@ test:
 ```
 
 Strategies:
+
 - Quarantine flaky tests
 - Add retry logic for known issues
 - Investigate and fix root causes
@@ -302,6 +312,7 @@ Strategies:
 ### Pipeline Metrics
 
 Track these metrics:
+
 - **Lead time**: Commit to production duration
 - **Deployment frequency**: How often you deploy
 - **Change failure rate**: Percentage of failed deployments
@@ -318,6 +329,7 @@ deploy:
 ```
 
 Implement:
+
 - Readiness probes
 - Liveness probes
 - Startup probes
@@ -355,6 +367,7 @@ deploy:
 ```
 
 Best practices:
+
 - Rotate secrets regularly
 - Use short-lived credentials
 - Audit secret access
@@ -375,6 +388,7 @@ deploy:production:
 ```
 
 Controls:
+
 - Branch protection rules
 - Required approvals
 - Audit logging
@@ -405,6 +419,7 @@ cache:
 ```
 
 Cache strategies:
+
 - Cache dependencies between runs
 - Use content-based cache keys
 - Separate cache per branch
@@ -444,6 +459,7 @@ build:
 ```
 
 Best practices:
+
 - Set appropriate expiration
 - Only store necessary artifacts
 - Use artifact compression
@@ -483,6 +499,7 @@ rollback:
 ### Pipeline Documentation
 
 Document in your repository:
+
 - Pipeline stages and their purpose
 - Required environment variables
 - Deployment procedures
@@ -492,6 +509,7 @@ Document in your repository:
 ### Runbooks
 
 Create runbooks for:
+
 - Deployment failures
 - Rollback procedures
 - Environment setup

@@ -29,18 +29,23 @@ You are an expert in GitHub workflows, including pull requests, code reviews, Gi
    - Be specific about what the PR accomplishes
 
 3. **PR Description Template**
+
    ```markdown
    ## Summary
+
    Brief description of changes and motivation.
 
    ## Changes
+
    - Bullet points of specific changes made
 
    ## Testing
+
    - How the changes were tested
    - Steps to reproduce/verify
 
    ## Related Issues
+
    Closes #123
 
    ## Screenshots (if applicable)
@@ -106,6 +111,7 @@ is never reassigned.
 ### Workflow Best Practices
 
 1. **Use workflow templates**
+
    ```yaml
    name: CI
    on:
@@ -122,13 +128,14 @@ is never reassigned.
          - name: Setup Node.js
            uses: actions/setup-node@v4
            with:
-             node-version: '20'
-             cache: 'npm'
+             node-version: "20"
+             cache: "npm"
          - run: npm ci
          - run: npm test
    ```
 
 2. **Cache dependencies**
+
    ```yaml
    - uses: actions/cache@v4
      with:
@@ -137,6 +144,7 @@ is never reassigned.
    ```
 
 3. **Use reusable workflows**
+
    ```yaml
    jobs:
      call-workflow:
@@ -173,6 +181,7 @@ permissions:
 Create `.github/ISSUE_TEMPLATE/` with templates:
 
 **Bug Report:**
+
 ```markdown
 ---
 name: Bug Report
@@ -181,25 +190,31 @@ labels: bug
 ---
 
 ## Description
+
 Clear description of the bug.
 
 ## Steps to Reproduce
+
 1. Step one
 2. Step two
 
 ## Expected Behavior
+
 What should happen.
 
 ## Actual Behavior
+
 What actually happens.
 
 ## Environment
+
 - OS:
 - Browser:
 - Version:
 ```
 
 **Feature Request:**
+
 ```markdown
 ---
 name: Feature Request
@@ -208,18 +223,22 @@ labels: enhancement
 ---
 
 ## Problem
+
 Describe the problem this feature would solve.
 
 ## Proposed Solution
+
 Describe your proposed solution.
 
 ## Alternatives Considered
+
 Other approaches you've considered.
 ```
 
 ### Labels
 
 Use consistent labels:
+
 - `bug`, `enhancement`, `documentation`
 - `good first issue`, `help wanted`
 - `priority: high`, `priority: medium`, `priority: low`
@@ -230,6 +249,7 @@ Use consistent labels:
 ### Branch Protection Rules
 
 Configure for main branch:
+
 - Require pull request reviews
 - Require status checks to pass
 - Require conversation resolution

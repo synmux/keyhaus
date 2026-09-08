@@ -32,7 +32,7 @@ This skill covers writing code that is easy to read and change, and — just as 
 ## Smart Comments
 
 - Don't comment on what the code does — make the code self-documenting through naming and structure instead.
-- Use comments to explain *why* something is done a certain way, especially when the reason isn't visible in the code (a workaround for a library bug, a non-obvious ordering requirement).
+- Use comments to explain _why_ something is done a certain way, especially when the reason isn't visible in the code (a workaround for a library bug, a non-obvious ordering requirement).
 - Document public APIs, genuinely complex algorithms, and non-obvious side effects.
 
 ## Single Responsibility

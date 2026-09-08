@@ -21,11 +21,13 @@ The fundamental rule: inner layers must never depend on outer layers.
 ## Flutter + Clean Architecture
 
 ### Architecture Layers
+
 - **Presentation**: Widgets, BLoCs, and UI components
 - **Domain**: Entities, use cases, and repository interfaces
 - **Data**: Repository implementations, data sources, and models
 
 ### Feature-first Organization
+
 ```
 feature/
   data/
@@ -43,17 +45,20 @@ feature/
 ```
 
 ### State Management with flutter_bloc
+
 - Use flutter_bloc for state management
 - Implement immutable states via Freezed
 - Handle events and states with proper patterns
 - Keep BLoCs focused on single responsibilities
 
 ### Error Handling
+
 - Implement Either<Failure, Success> pattern from Dartz
 - Use functional error handling without exceptions
 - Define clear Failure types for different error scenarios
 
 ### Key Libraries
+
 - `flutter_bloc` - State management
 - `freezed` - Immutable classes and unions
 - `get_it` - Service locator for DI
@@ -62,18 +67,21 @@ feature/
 ## Go Backend Clean Architecture
 
 ### Layer Separation
+
 - **Handlers** - HTTP/gRPC request handling
 - **Services** - Business logic and use cases
 - **Repositories** - Data access abstractions
 - **Domain Models** - Core business entities
 
 ### Interface-driven Development
+
 - Define interfaces for all dependencies
 - Implement dependency injection through constructors
 - Keep interfaces small and focused
 - Allow easy mocking for tests
 
 ### Project Structure
+
 ```
 project/
   cmd/              # Application entry points
@@ -86,6 +94,7 @@ project/
 ```
 
 ### Testing Strategy
+
 - Write table-driven unit tests with mocks
 - Separate fast unit tests from integration tests
 - Use interfaces to inject test doubles
