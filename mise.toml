@@ -1,0 +1,8 @@
+[env]
+KEYHAUS_MISE_ACTIVE = 'true'
+
+[settings]
+env_file = '.env'
+
+[tools]
+ruby = { version = '4.0.7' }
