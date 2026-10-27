@@ -18,6 +18,8 @@ runtimes:
 # This is the section where you manage your linters. (https://docs.trunk.io/check/configuration)
 lint:
   disabled:
+    # Trunk plugins v1.11.0 still pass pinact the single-dash `-format` flag, which pinact 5 rejects.
+    - pinact
     - rubocop
   enabled:
     - taplo@0.10.0
@@ -28,7 +30,6 @@ lint:
     - grype@0.121.0
     - markdownlint@0.50.0
     - osv-scanner@2.7.0
-    - pinact@5.0.2
     - prettier@3.9.10
     - trufflehog@3.99.7
     - yamllint@1.38.0
