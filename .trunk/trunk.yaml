@@ -25,7 +25,7 @@ lint:
     - taplo@0.10.0
     - standardrb
     - actionlint@1.7.12
-    - checkov@3.3.30
+    - checkov@3.4.0
     - git-diff-check
     - grype@0.121.0
     - markdownlint@0.50.0
